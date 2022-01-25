@@ -1,0 +1,12 @@
+Quando utilizamos o método do TDD temos três fases: escrevemos um teste (que inicialmente não vai passar);
+escrevemos um código mínimo (que vai fazer o teste passar); refatoramos o código.
+Esse processo é repetido como um ciclo e, cada vez que a refatoração do código é satisfatória, partimos para
+a escrita do teste de uma nova funcionalidade.
+No entanto, quando utilizamos o TDD envolvendo testes de unidade e testes funcionais, o ciclo torna-se um pouco mais complexo.
+Temos um ciclo de TDD dentro do outro. O teste funcional é inicialmente escrito, já que ele vai guiar as funcionalidades
+do sistema em desenvolvimento. Obviamente, ele não vai passar de primeira e, para que ele passe, devemos ter código funcional.
+Para criar esse código funcional, mais uma vez, utilizamos TDD e criamos testes de unidade. Quando o teste de unidade criado
+está passando e não necessita de refatoração, voltamos ao teste funcional. Este, agora, deve funcionar. Com o teste funcional
+passando, temos a etapa de refatoração e, aqui, ela envolve (ou pode envolver) uma nova rodada de TDD para os testes de unidade.
+Quando a refatoração do teste funcional está completa, podemos partir para a próxima funcionalidade e seguir o ciclo de
+desenvolvimento até que o SUT esteja apropriado para produção. 
